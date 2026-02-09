@@ -21,6 +21,7 @@ body {
   width: 1600px;
   padding: 20px;
   margin: 15px auto;
+  border: 3px solid red;
 }
 
 .title,
@@ -71,4 +72,50 @@ body {
 .images {
   width: 720px;
   margin: auto;
+  margin-bottom: 50px;
+}
+
+.cardcontainer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  width: 500px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+  overflow: hidden; /* hides everything outside the card */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 525px;
+}
+
+.card-image {
+  height: 33%;
+  width: 100%;
+  overflow: hidden; /* crops out the corners of the image */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center -150px;
+}
+
+.card-content {
+  padding: 5px 20px;
+}
+
+.card-content h3 {
+  font-size: 30px;
+}
+
+.card-content p {
+  font-size: 20px;
 }
