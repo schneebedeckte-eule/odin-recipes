@@ -27,7 +27,7 @@ body {
 }
 
 .title,
-.recipelist {
+.recipe-list {
   color: black;
   background-color: antiquewhite;
   border: 2px solid peachpuff;
@@ -56,39 +56,18 @@ body {
   margin-bottom: 10px;
 }
 
-.recipelist {
-  width: 300px;
-  border-radius: 15px;
-  text-align: center;
-  list-style-position: inside;
-  margin: 15px auto;
-  margin-top: 40px;
-}
-
-.recipes {
-  font-size: 20px;
-  padding: 10px;
-  margin: 25px auto;
-}
-
-.images {
-  width: 720px;
-  margin: auto;
-  margin-top: 30px;
-}
-
-.cardcontainer {
+.card-container {
   display: flex;
   gap: 24px;
   justify-content: center;
   align-items: stretch;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .card {
   width: 500px;
-  height: 400px;
+  height: 300px;
   box-shadow: 5px 5px 10px;
   border: 2px solid black;
   border-radius: 20px;
@@ -96,12 +75,10 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  max-width: 525px;
 }
 
 .card-image {
-  height: 33%;
+  flex: 0 0 40%;
   width: 100%;
   overflow: hidden; /* crops out the corners of the image */
 }
@@ -114,6 +91,8 @@ body {
 }
 
 .card-content {
+  position: relative;
+  top: -25px;
   padding: 5px 20px;
 }
 
@@ -122,5 +101,7 @@ body {
 }
 
 .card-content p {
+  position: relative;
+  top: -15px;
   font-size: 20px;
 }
