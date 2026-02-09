@@ -14,10 +14,13 @@ html {
 
 body {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
-  background-color: white;
+  background: #ff8c3b;
 }
 
 .content {
+  background-color: white;
+  border-radius: 35px;
+  border: 5px solid #ff6e5e;
   width: 1600px;
   padding: 20px;
   margin: 15px auto;
