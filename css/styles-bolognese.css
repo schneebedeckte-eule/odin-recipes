@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 html {
-  box-sizing: border-box;
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 *,
@@ -13,6 +13,66 @@ html {
 }
 
 body {
+  color: white;
   background-color: #4c3a51;
   font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 120px;
+}
+
+.bolo-intro {
+  text-align: center;
+  font-size: 25px;
+}
+
+.what-is-card {
+  display: flex;
+  max-width: 1200px;
+  max-height: 600px;
+  background-color: #774360;
+  border: 2px solid #b25068;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.what-is-content {
+  padding: 25px;
+}
+
+.what-is-content h2 {
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+.what-is-content p {
+  font-weight: 570;
+  font-size: 20px;
+}
+
+.what-is-content button {
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  background-color: #b25068;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.what-is-content button:hover {
+  background-color: #e7ab79;
+}
+
+.what-is-image {
+  width: 700px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: -500px;
 }
